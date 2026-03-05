@@ -71,3 +71,9 @@
 [Thu Mar  5 08:30:26 2026] [::1]:34516 Accepted
 [Thu Mar  5 08:30:26 2026] [::1]:34516 [302]: GET /admin/dashboard.php
 [Thu Mar  5 08:30:26 2026] [::1]:34516 Closing
+[Thu Mar  5 09:05:48 2026] [::1]:52246 Accepted
+[Thu Mar  5 09:05:48 2026] [::1]:52246 [200]: GET /index.html
+[Thu Mar  5 09:05:48 2026] [::1]:52246 Closing
+[Thu Mar  5 09:05:48 2026] [::1]:52258 Accepted
+[Thu Mar  5 09:05:48 2026] [::1]:52258 [200]: GET /assets/css/style.css
+[Thu Mar  5 09:05:48 2026] [::1]:52258 Closing
