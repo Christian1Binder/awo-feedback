@@ -1,5 +1,7 @@
 <?php
 // public/legal/impressum.php
+require_once __DIR__ . '/../../includes/helpers.php';
+send_security_headers();
 ?>
 <!DOCTYPE html>
 <html lang="de">

@@ -1,6 +1,15 @@
 <?php
 // includes/auth.php
 if (session_status() === PHP_SESSION_NONE) {
+    // Set strict session cookie parameters before starting session
+    session_set_cookie_params([
+        'lifetime' => 0, // Until browser closes
+        'path' => '/',
+        'domain' => '', // Current domain
+        'secure' => isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on', // Send only over HTTPS if active
+        'httponly' => true, // Prevent JavaScript access to session cookie
+        'samesite' => 'Strict' // Prevent CSRF attacks via cross-site requests
+    ]);
     session_start();
 }
 
@@ -41,6 +50,8 @@ function login($username, $password, $config) {
     }
 
     if ($username === $config['admin']['username'] && password_verify($password, $config['admin']['password_hash'])) {
+        // Prevent session fixation by regenerating ID on privilege escalation
+        session_regenerate_id(true);
         $_SESSION['admin_logged_in'] = true;
         $_SESSION['login_attempts'] = 0;
         return true;

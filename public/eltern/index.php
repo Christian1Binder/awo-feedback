@@ -1,10 +1,20 @@
 <?php
 // public/eltern/index.php
 if (session_status() === PHP_SESSION_NONE) {
+    session_set_cookie_params([
+        'lifetime' => 0,
+        'path' => '/',
+        'domain' => '',
+        'secure' => isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on',
+        'httponly' => true,
+        'samesite' => 'Strict'
+    ]);
     session_start();
 }
 require_once __DIR__ . '/../../includes/db.php';
 require_once __DIR__ . '/../../includes/helpers.php';
+
+send_security_headers();
 
 // Disable csrf.php auto-check and handle it manually
 function generate_csrf_token() {
@@ -24,6 +34,12 @@ function verify_csrf_token($token) {
 $errors = [];
 
 if (isPost()) {
+    // Honeypot check
+    if (!empty($_POST['contact_me_by_fax_only'])) {
+        // Silently discard spam
+        redirect(getBasePath() . 'public/danke/index.php');
+    }
+
     if (!verify_csrf_token($_POST['csrf_token'] ?? '')) {
         die('CSRF validation failed.');
     }
@@ -130,6 +146,12 @@ if (isPost()) {
 
         <form method="POST" action="">
             <input type="hidden" name="csrf_token" value="<?= e(generate_csrf_token()) ?>">
+
+            <!-- Honeypot -->
+            <div style="display:none;" aria-hidden="true">
+                <label for="contact_me_by_fax_only">Do not fill this out if you are human:</label>
+                <input type="text" name="contact_me_by_fax_only" id="contact_me_by_fax_only" tabindex="-1" autocomplete="off">
+            </div>
 
             <div class="form-group mandatory-header">
                 <label>Welche Ferienbetreuung haben Sie besucht? *</label>

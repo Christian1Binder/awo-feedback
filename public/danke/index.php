@@ -1,5 +1,7 @@
 <?php
 // public/danke/index.php
+require_once __DIR__ . '/../../includes/helpers.php';
+send_security_headers();
 ?>
 <!DOCTYPE html>
 <html lang="de">

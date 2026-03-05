@@ -1,9 +1,11 @@
 <?php
 // admin/dashboard.php
 require_once __DIR__ . '/../includes/auth.php';
-require_login();
 require_once __DIR__ . '/../includes/db.php';
 require_once __DIR__ . '/../includes/helpers.php';
+
+send_security_headers();
+require_login();
 
 $filter_form_type = $_GET['form_type'] ?? '';
 $filter_holiday = $_GET['holiday'] ?? '';

@@ -1,10 +1,12 @@
 <?php
 // admin/reset.php
 require_once __DIR__ . '/../includes/auth.php';
-require_login();
 require_once __DIR__ . '/../includes/db.php';
 require_once __DIR__ . '/../includes/helpers.php';
 require_once __DIR__ . '/../includes/csrf.php';
+
+send_security_headers();
+require_login();
 
 $msg = '';
 
