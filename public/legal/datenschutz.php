@@ -10,6 +10,15 @@
     <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 <body>
+    <header>
+        <div class="header-container">
+            <a href="../../index.html">
+                <img src="../../assets/img/logo.png" alt="AWO Bezirksjugendwerk Logo" class="header-logo">
+            </a>
+        </div>
+    </header>
+
+    <main>
     <div class="container legal-container">
         <h1>Datenschutzerklärung</h1>
         <p><strong>Einleitung</strong></p>
@@ -35,6 +44,23 @@
         <p>Für Fragen zum Datenschutz wenden Sie sich bitte an die im Impressum angegebenen Kontaktdaten.</p>
 
         <p>Dies ist ein Platzhalter-Datenschutzhinweis. Bitte passen Sie diesen bei Bedarf an Ihre Organisation an.</p>
+
+        <div style="margin-top: 30px;">
+             <a href="../../index.html" class="btn">Zurück zur Startseite</a>
+        </div>
     </div>
+    </main>
+
+    <footer>
+        <nav class="footer-nav">
+            <a href="../../index.html">STARTSEITE</a>
+            <span class="footer-divider">|</span>
+            <a href="../../admin/index.php">LOGIN</a>
+            <span class="footer-divider">|</span>
+            <a href="impressum.php">IMPRESSUM</a>
+            <span class="footer-divider">|</span>
+            <a href="datenschutz.php">DATENSCHUTZ</a>
+        </nav>
+    </footer>
 </body>
 </html>
