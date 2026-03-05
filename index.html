@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Ferienbetreuung</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .landing-container {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .landing-container h1 {
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        .landing-container p {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 40px;
+        }
+        .link-grid {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .link-card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            width: 300px;
+            text-decoration: none;
+            color: var(--text-color);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .link-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        .link-card h2 {
+            margin-top: 0;
+            color: var(--primary);
+        }
+        .link-card.kids h2 {
+            color: #ff9800;
+        }
+        .footer-links {
+            margin-top: 50px;
+            font-size: 0.9em;
+            color: #888;
+        }
+        .footer-links a {
+            color: #888;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container landing-container">
+        <h1>Willkommen bei der Ferienbetreuung</h1>
+        <p>Wir freuen uns über Ihr Feedback! Bitte wählen Sie den passenden Fragebogen aus:</p>
+
+        <div class="link-grid">
+            <a href="public/eltern/index.php" class="link-card">
+                <h2>Für Eltern</h2>
+                <p>Teilen Sie uns Ihre Meinung zur Organisation, Kommunikation und Betreuung mit.</p>
+            </a>
+
+            <a href="public/kinder/index.php" class="link-card kids">
+                <h2>Für Kinder</h2>
+                <p>Hallo! Wie hat es dir gefallen? Bewerte uns mit Smileys!</p>
+            </a>
+        </div>
+
+        <div class="footer-links">
+            <a href="admin/index.php">Admin-Login</a> |
+            <a href="public/legal/impressum.php">Impressum</a> |
+            <a href="public/legal/datenschutz.php">Datenschutz</a>
+        </div>
+    </div>
+</body>
+</html>
