@@ -86,11 +86,20 @@ if (isPost()) {
     <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 <body class="kids-theme">
+    <header style="background: #ffffff; border-bottom: 3px solid #fbc02d;">
+        <div class="header-container">
+            <a href="../../index.html">
+                <img src="../../assets/img/logo.png" alt="AWO Bezirksjugendwerk Logo" class="header-logo">
+            </a>
+        </div>
+    </header>
+
+    <main>
     <div class="container">
-        <header>
+        <div class="form-header" style="text-align: center; margin-bottom: 30px;">
             <h1>Hallo! Wie war's?</h1>
-            <p>Deine Meinung ist wichtig!</p>
-        </header>
+            <p style="font-size: 1.2em; color: #e65100;">Deine Meinung ist uns wichtig!</p>
+        </div>
 
         <?php if (!empty($errors)): ?>
             <div class="errors">
@@ -170,6 +179,20 @@ if (isPost()) {
             <button type="submit" class="btn btn-kids">Fertig & Abschicken!</button>
         </form>
     </div>
+    </main>
+
+    <footer style="background-color: #fbc02d;">
+        <nav class="footer-nav">
+            <a href="../../index.html" style="color: #e65100;">STARTSEITE</a>
+            <span class="footer-divider" style="color: #e65100;">|</span>
+            <a href="../../admin/index.php" style="color: #e65100;">LOGIN</a>
+            <span class="footer-divider" style="color: #e65100;">|</span>
+            <a href="../legal/impressum.php" style="color: #e65100;">IMPRESSUM</a>
+            <span class="footer-divider" style="color: #e65100;">|</span>
+            <a href="../legal/datenschutz.php" style="color: #e65100;">DATENSCHUTZ</a>
+        </nav>
+    </footer>
+
     <script src="../../assets/js/form.js"></script>
 </body>
 </html>

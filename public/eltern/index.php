@@ -105,11 +105,20 @@ if (isPost()) {
     <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 <body>
+    <header>
+        <div class="header-container">
+            <a href="../../index.html">
+                <img src="../../assets/img/logo.png" alt="AWO Bezirksjugendwerk Logo" class="header-logo">
+            </a>
+        </div>
+    </header>
+
+    <main>
     <div class="container">
-        <header>
+        <div class="form-header" style="text-align: center; margin-bottom: 30px;">
             <h1>Eltern-Feedback</h1>
             <p>Ihre Meinung ist uns wichtig!</p>
-        </header>
+        </div>
 
         <?php if (!empty($errors)): ?>
             <div class="errors">
@@ -301,9 +310,22 @@ if (isPost()) {
                 <p><a href="<?= e(getBasePath()) ?>public/legal/datenschutz.php" target="_blank">Datenschutzhinweis lesen</a></p>
             </div>
 
-            <button type="submit" class="btn">Feedback senden</button>
+            <button type="submit" class="btn" style="width:100%; font-size: 1.1em; padding: 15px;">Feedback senden</button>
         </form>
     </div>
+    </main>
+
+    <footer>
+        <nav class="footer-nav">
+            <a href="../../index.html">STARTSEITE</a>
+            <span class="footer-divider">|</span>
+            <a href="../../admin/index.php">LOGIN</a>
+            <span class="footer-divider">|</span>
+            <a href="../legal/impressum.php">IMPRESSUM</a>
+            <span class="footer-divider">|</span>
+            <a href="../legal/datenschutz.php">DATENSCHUTZ</a>
+        </nav>
+    </footer>
     <script src="../../assets/js/form.js"></script>
 </body>
 </html>
