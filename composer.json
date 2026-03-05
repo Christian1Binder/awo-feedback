@@ -1,0 +1,11 @@
+{
+    "name": "awo/feedback",
+    "description": "Feedback system for holiday care",
+    "type": "project",
+    "require": {
+        "php": ">=8.0"
+    },
+    "suggest": {
+        "phpoffice/phpspreadsheet": "Erforderlich für echten XLSX-Export, wenn CSV nicht ausreicht."
+    }
+}
