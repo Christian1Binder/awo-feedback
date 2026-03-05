@@ -1,0 +1,73 @@
+[Thu Mar  5 08:22:14 2026] PHP 8.3.6 Development Server (http://localhost:8080) started
+[Thu Mar  5 08:22:30 2026] [::1]:59754 Accepted
+[Thu Mar  5 08:22:30 2026] [::1]:59754 [200]: GET /public/eltern/index.php
+[Thu Mar  5 08:22:30 2026] [::1]:59754 Closing
+[Thu Mar  5 08:22:48 2026] [::1]:34548 Accepted
+[Thu Mar  5 08:22:48 2026] [::1]:34548 [200]: GET /public/kinder/index.php
+[Thu Mar  5 08:22:48 2026] [::1]:34548 Closing
+[Thu Mar  5 08:23:03 2026] [::1]:38366 Accepted
+[Thu Mar  5 08:23:03 2026] [::1]:38366 [200]: GET /admin/index.php
+[Thu Mar  5 08:23:03 2026] [::1]:38366 Closing
+[Thu Mar  5 08:24:16 2026] [::1]:59280 Accepted
+[Thu Mar  5 08:24:16 2026] [::1]:59280 [200]: GET /public/eltern/index.php
+[Thu Mar  5 08:24:16 2026] [::1]:59280 Closing
+[Thu Mar  5 08:24:17 2026] [::1]:59294 Accepted
+[Thu Mar  5 08:24:17 2026] [::1]:59294 [200]: GET /public/kinder/index.php
+[Thu Mar  5 08:24:17 2026] [::1]:59294 Closing
+[Thu Mar  5 08:24:17 2026] [::1]:59298 Accepted
+[Thu Mar  5 08:24:17 2026] [::1]:59298 [200]: GET /admin/index.php
+[Thu Mar  5 08:24:17 2026] [::1]:59298 Closing
+[Thu Mar  5 08:24:53 2026] [::1]:42144 Accepted
+[Thu Mar  5 08:24:53 2026] [::1]:42144 [200]: GET /public/eltern/index.php
+[Thu Mar  5 08:24:53 2026] [::1]:42144 Closing
+[Thu Mar  5 08:24:53 2026] [::1]:42148 Accepted
+[Thu Mar  5 08:24:53 2026] [::1]:42148 [200]: GET /public/kinder/index.php
+[Thu Mar  5 08:24:53 2026] [::1]:42148 Closing
+[Thu Mar  5 08:24:54 2026] [::1]:42150 Accepted
+[Thu Mar  5 08:24:54 2026] PHP Notice:  session_start(): Ignoring session_start() because a session is already active (started from /app/includes/auth.php on line 3) in /app/includes/csrf.php on line 3
+[Thu Mar  5 08:24:54 2026] [::1]:42150 [200]: GET /admin/index.php
+[Thu Mar  5 08:24:54 2026] [::1]:42150 Closing
+[Thu Mar  5 08:24:54 2026] [::1]:42160 Accepted
+[Thu Mar  5 08:24:54 2026] [::1]:42160 [200]: GET /assets/css/style.css
+[Thu Mar  5 08:24:54 2026] [::1]:42160 Closing
+[Thu Mar  5 08:25:41 2026] [::1]:43320 Accepted
+[Thu Mar  5 08:25:41 2026] [::1]:43320 [200]: GET /public/eltern/index.php
+[Thu Mar  5 08:25:41 2026] [::1]:43320 Closing
+[Thu Mar  5 08:25:41 2026] [::1]:43336 Accepted
+[Thu Mar  5 08:25:41 2026] [::1]:43336 [200]: GET /public/kinder/index.php
+[Thu Mar  5 08:25:41 2026] [::1]:43336 Closing
+[Thu Mar  5 08:25:41 2026] [::1]:43338 Accepted
+[Thu Mar  5 08:25:41 2026] PHP Notice:  session_start(): Ignoring session_start() because a session is already active (started from /app/includes/auth.php on line 3) in /app/includes/csrf.php on line 3
+[Thu Mar  5 08:25:41 2026] [::1]:43338 [200]: GET /admin/index.php
+[Thu Mar  5 08:25:41 2026] [::1]:43338 Closing
+[Thu Mar  5 08:25:41 2026] [::1]:43350 Accepted
+[Thu Mar  5 08:25:41 2026] [::1]:43350 [200]: GET /assets/css/style.css
+[Thu Mar  5 08:25:41 2026] [::1]:43350 Closing
+[Thu Mar  5 08:26:09 2026] [::1]:54354 Accepted
+[Thu Mar  5 08:26:09 2026] [::1]:54354 [200]: GET /public/eltern/index.php
+[Thu Mar  5 08:26:09 2026] [::1]:54354 Closing
+[Thu Mar  5 08:26:09 2026] [::1]:54366 Accepted
+[Thu Mar  5 08:26:09 2026] [::1]:54378 Accepted
+[Thu Mar  5 08:26:09 2026] [::1]:54366 [200]: GET /assets/css/style.css
+[Thu Mar  5 08:26:09 2026] [::1]:54378 [200]: GET /assets/js/form.js
+[Thu Mar  5 08:26:09 2026] [::1]:54366 Closing
+[Thu Mar  5 08:26:09 2026] [::1]:54378 Closing
+[Thu Mar  5 08:26:10 2026] [::1]:54394 Accepted
+[Thu Mar  5 08:26:10 2026] [::1]:54394 [200]: GET /public/kinder/index.php
+[Thu Mar  5 08:26:10 2026] [::1]:54394 Closing
+[Thu Mar  5 08:26:10 2026] [::1]:54396 Accepted
+[Thu Mar  5 08:26:10 2026] [::1]:54404 Accepted
+[Thu Mar  5 08:26:10 2026] [::1]:54396 [200]: GET /assets/css/style.css
+[Thu Mar  5 08:26:10 2026] [::1]:54404 [200]: GET /assets/js/form.js
+[Thu Mar  5 08:26:10 2026] [::1]:54396 Closing
+[Thu Mar  5 08:26:10 2026] [::1]:54404 Closing
+[Thu Mar  5 08:26:10 2026] [::1]:54416 Accepted
+[Thu Mar  5 08:26:10 2026] PHP Notice:  session_start(): Ignoring session_start() because a session is already active (started from /app/includes/auth.php on line 3) in /app/includes/csrf.php on line 3
+[Thu Mar  5 08:26:10 2026] [::1]:54416 [200]: GET /admin/index.php
+[Thu Mar  5 08:26:10 2026] [::1]:54416 Closing
+[Thu Mar  5 08:26:10 2026] [::1]:54428 Accepted
+[Thu Mar  5 08:26:10 2026] [::1]:54428 [200]: GET /assets/css/style.css
+[Thu Mar  5 08:26:10 2026] [::1]:54428 Closing
+[Thu Mar  5 08:30:26 2026] [::1]:34516 Accepted
+[Thu Mar  5 08:30:26 2026] [::1]:34516 [302]: GET /admin/dashboard.php
+[Thu Mar  5 08:30:26 2026] [::1]:34516 Closing
